@@ -1,0 +1,170 @@
+:root {
+  --header-nav-color: #2E2F42;
+  --main-text-color: #434455;
+  --title-color: #2E2F42;
+  --brand-color: #4D5AE5;
+  --active-element-color: #404BBF;
+  --main-bg: #ffffff;
+  --light-bg: #F4F4FD;
+  --dark-bg: #2E2F42;
+  --dark-bg-title-color: #ffffff;
+  --dark-bg-element-color: #F4F4FD;
+}
+
+body {
+  font: 400 16px/1.5 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  background-color: var(--main-bg);
+}
+
+/*
+  ******************************
+   —————————— DEFAULT ——————————
+  ******************************
+*/
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;letter-spacing: 0.02em;
+}
+.title, .subtitle {
+  color: var(--title-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*
+  ******************************
+   —————————— HEADER ——————————
+  ******************************
+*/
+
+.nav {
+  font-weight: 500;
+  color: var(--header-nav-color);
+}
+
+.logo {
+  font: 800 18px/1.17 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo .accent {
+  color: var(--brand-color);
+}
+.contacts {
+  font-style: normal;
+}
+
+.list .link:is(:hover, :focus) {
+  color: var(--active-element-color);
+}
+
+/*
+  ******************************
+   —————————— MAIN ——————————
+  ******************************
+*/
+
+/*
+  ******************************
+   —————————— HERO ——————————
+  ******************************
+*/
+
+.hero {
+  background-color: var(--dark-bg);
+}
+
+.hero .title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--dark-bg-title-color);
+}
+.hero .btn {
+  color: var(--dark-bg-title-color);
+  background-color: var(--brand-color);
+}
+.hero .btn:is(:hover, :focus) {
+  background-color: var(--active-element-color);
+}
+
+/*
+  ******************************
+   —————————— TEAM ——————————
+  ******************************
+*/
+
+.team {
+  background-color: var(--light-bg);
+}
+
+.team-item {
+  background-color: var(--main-bg);
+}
+
+/*
+  ******************************
+   —————————— FOOTER ——————————
+  ******************************
+*/
+
+.footer {
+  color: var(--dark-bg-element-color);
+  background-color: var(--dark-bg);
+}
+
+/*
+  ******************************
+  ————————— PORTFOLIO —————————
+  ******************************
+*/
+
+.filter .btn {
+  color: var(--brand-color);
+  background-color: var(--light-bg);
+}
+.filter .btn:is(:hover, :focus) {
+  color: var(--dark-bg-title-color);
+  background-color: var(--active-element-color);
+}
