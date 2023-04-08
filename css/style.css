@@ -11,7 +11,7 @@
   --dark-bg-title-color: #ffffff;
   --dark-bg-element-color: #F4F4FD;
 
-  --outline: 2px solid red;
+  /* --outline: 2px solid red; */
 }
 
 body {
@@ -34,6 +34,9 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+img {
+  display: block;
 }
 
 .btn {
@@ -177,6 +180,7 @@ ul {
 
 .hero .btn {
   padding: 16px 32px;
+  min-width: 169px;
   text-transform: capitalize;
   color: var(--dark-bg-title-color);
   background-color: var(--brand-color);
@@ -194,9 +198,10 @@ ul {
    —————————— ABOUT ——————————
   ******************************
 */
-
-.about .list {
+.about {
   padding: 120px 0;
+}
+.about .list {
   display: flex;
   gap: 24px;
 }
@@ -210,14 +215,15 @@ ul {
    —————————— WORK ——————————
   ******************************
 */
-
+.work {
+  padding-bottom: 120px;
+}
 .work .title {
   text-align: center;
 }
 
 .work .list {
   margin-top: 72px;
-  padding-bottom: 120px;
   display: flex;
   gap: 24px;
 }
@@ -265,6 +271,9 @@ ul {
   color: var(--dark-bg-element-color);
   background-color: var(--dark-bg);
 }
+.footer .logo {
+  display: inline-block;
+}
 
 .footer .text {
   max-width: 264px;
@@ -290,13 +299,14 @@ ul {
   padding: 12px 24px;
   color: var(--brand-color);
   background-color: var(--light-bg);
-  border: 1px solid #E7E9FC;
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
 .filter .btn:is(:hover, :focus) {
   color: var(--dark-bg-title-color);
   background-color: var(--active-element-color);
+  border-color: transparent;
 }
 
 .work-card {
@@ -304,10 +314,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-}
-
-.work-card .img {
-  display: block;
 }
 
 .work-card .desc {
