@@ -95,7 +95,7 @@ img {
 .container {
   max-width: 1158px;
   margin-inline: auto;
-  padding: 0 15px;
+  padding-inline: 15px;
   /* outline: var(--outline); */
 }
 
@@ -318,9 +318,9 @@ img {
 
 .work-card .desc {
   padding: 32px 16px;
-  border-bottom: 1px solid #E7E9FC;
-  border-left: 1px solid #E7E9FC;
-  border-right: 1px solid #E7E9FC;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
 }
 
 .work-card .text {
