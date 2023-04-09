@@ -35,6 +35,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 img {
   display: block;
 }
@@ -170,7 +171,7 @@ img {
 }
 
 .hero .title {
-  width: 496px;
+  max-width: 496px;
   margin-inline: auto;
   margin-bottom: 48px;
   font-size: 56px;
@@ -201,13 +202,14 @@ img {
 .about {
   padding: 120px 0;
 }
-.about .list {
+
+:where(.about, .work, .team) .list {
   display: flex;
   gap: 24px;
 }
 
-.about .text {
-  margin-top: 8px;
+.about .subtitle {
+  margin-bottom: 8px;
 }
 
 /*
@@ -218,14 +220,10 @@ img {
 .work {
   padding-bottom: 120px;
 }
-.work .title {
-  text-align: center;
-}
 
-.work .list {
-  margin-top: 72px;
-  display: flex;
-  gap: 24px;
+.work .title {
+  margin-bottom: 72px;
+  text-align: center;
 }
 
 /*
@@ -239,10 +237,8 @@ img {
   background-color: var(--light-bg);
 }
 
-.team .list {
-  margin-top: 72px;
-  display: flex;
-  gap: 24px;
+.team .title {
+  margin-bottom: 72px;
 }
 
 .team-item {
@@ -271,13 +267,14 @@ img {
   color: var(--dark-bg-element-color);
   background-color: var(--dark-bg);
 }
+
 .footer .logo {
+  margin-bottom: 16px;
   display: inline-block;
 }
 
 .footer .text {
   max-width: 264px;
-  margin-top: 16px;
 }
 
 /*
@@ -290,6 +287,7 @@ img {
 }
 
 .filter {
+  margin-bottom: 72px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -310,7 +308,6 @@ img {
 }
 
 .work-card {
-  margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
@@ -323,6 +320,6 @@ img {
   border-right: 1px solid var(--accent-color);
 }
 
-.work-card .text {
-  margin-top: 8px;
+.work-card .subtitle {
+  margin-bottom: 8px;
 }
