@@ -208,6 +208,10 @@ img {
   gap: 24px;
 }
 
+.about .item {
+  flex-basis: calc((100% - 24px * 3) / 4);
+}
+
 .about .subtitle {
   margin-bottom: 8px;
 }
